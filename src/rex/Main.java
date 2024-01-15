@@ -16,18 +16,18 @@ public class Main {
 		Room room8 = new Room(8);
 		Room room9 = new Room(9);
 		Room room10 = new Room(10);
-		Item item1 = new Item(1, "Magisch Voorwerp", "Blijkt iets te doen..");
-		Item item2 = new Item(2, "Niet-Magisch Voorwerp", "Blijkt niets te doen..");
-		Item item3 = new Item(3, "Zwaard", "Vermoordt een vijand");
-		Item item4 = new Item(4, "Schild", "Blokkeert aanvallen van een vijand");
-		Item item5 = new Item(5, "Steen", "Gooi een steen door de kamer heen");
+		Item item1 = new Item(1, "Magisch Voorwerp", "???");
+		Item item2 = new Item(2, "Verdachte Paddo", "Word wakker in een andere kamer");
+		Item item3 = new Item(3, "Middeleeuws Zwaard", "Vermoord een vijand");
+		Item item4 = new Item(4, "Honkbalknuppel", "Lanceer een vijand naar een andere kamer");
+		Item item5 = new Item(5, "Handvorm Baksteen", "Kans om een vijand uit te schakelen");
 		Enemy enemy1 = new Enemy(1, "Vincent Kreuzen");
 		Enemy enemy2 = new Enemy(2, "Bart Mutsaers");
 		Enemy enemy3 = new Enemy(3, "Luc Claessens");
 		Enemy enemy4 = new Enemy(4, "Bob van der Putten");
 		Enemy enemy5 = new Enemy(5, "Ger Saris");
 		
-		/* Fill game class */
+		/* Initialize game class */
 		game.addPlayer(player);
 		game.addRoom(room1);
 		game.addRoom(room2);
@@ -44,7 +44,11 @@ public class Main {
 		game.addItem(item3);
 		game.addItem(item4);
 		game.addItem(item5);
+		game.addEnemy(enemy1);
+		game.addEnemy(enemy2);
+		game.addEnemy(enemy3);
+		game.addEnemy(enemy4);
+		game.addEnemy(enemy5);
 		game.startGame();
 	}
-
 }
